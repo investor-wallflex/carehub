@@ -1,0 +1,241 @@
+.mainconatainer {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    height: auto; /* Adjust height for mobile responsiveness */
+}
+
+.hero-section {
+    min-height: 500px;
+    background-image: url('../assets/gh.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    color: black;
+    text-align: left;
+    padding: 0 20px;
+    position: relative; /* Allows the overlay positioning */
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.6); /* Light overlay */
+    z-index: 1; /* Ensures the overlay is above the background but below the text */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; /* Ensures content is above the overlay */
+}
+
+.text-content h5 {
+    font-size: 1.2rem;
+    color: #555; /* Darker shade for readability */
+}
+
+.text-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #222; /* Darker shade for readability */
+    margin: 10px 0;
+}
+
+.highlight {
+    color: #00c4ff;
+}
+
+.text-content p {
+    line-height: 1.5;
+    color: #333; /* Darker shade for readability */
+    margin: 20px 0;
+}
+
+.cta-button {
+    background-color: #00c4ff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.cta-button:hover {
+    background-color: #009bcc;
+}
+
+
+/* App.css */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    
+}
+
+
+.logo {
+    position: absolute;
+    top: 20px; /* Distance from the top */
+    left: 20px; /* Distance from the left */
+    font-size: 24px; /* Adjust size as needed */
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.form-container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding:  20px;
+    width: 100%;
+    margin: 0;
+}
+
+
+
+main input, select{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+main button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00c4ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+main button:hover {
+    background-color: #009bcc;
+}
+
+main p {
+    text-align: center;
+}
+
+ main span {
+    color: #00c4ff;
+    cursor: pointer;
+}
+
+.right-div {
+    position: relative; /* Allows the overlay positioning */
+    background-image: url('../assets/right.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 500px;
+}
+
+/* Adding a semi-transparent overlay to .right-div */
+.right-div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5 ); /* Light overlay to match hero-section */
+    z-index: 1; /* Ensures overlay appears above background but below content */
+}
+
+.right-div .container {
+    position: relative;
+    z-index: 2; /* Ensures content appears above the overlay */
+    background-color: rgba(255, 255, 255, 0.3); /* Makes form container semi-transparent */
+    backdrop-filter: blur(px); /* Optional: adds a blur effect to the background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+}
+@media (max-width: 768px) {
+    .mainconatainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 100%;
+        height: auto; /* Adjust height for mobile responsiveness */
+    }
+    
+    .hero-section {
+        padding: 15px;
+    }
+    .text-content h5 {
+        font-size: 1.6rem; /* Larger font on tablets */
+    }
+
+    .text-content h1 {
+        font-size: 3.4rem; /* Larger font on tablets */
+    }
+
+    .text-content p {
+        font-size: 1.3rem; /* Even larger font on small screens */
+    }
+
+    .cta-button {
+        font-size: 1rem; /* Adjusts button size */
+        padding: 10px 15px;
+    }
+
+    .right-div .container {
+        padding: 15px;
+        width: 100%;
+        
+    }
+}
+
+@media (max-width: 480px) {
+    .text-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .text-content p {
+        font-size: 0.8rem;
+    }
+
+    .cta-button {
+        font-size: 0.75rem;
+        padding: 6px 10px;
+    }
+}
+
+

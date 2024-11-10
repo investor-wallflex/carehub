@@ -1,0 +1,129 @@
+/* General styling for the header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-left {
+  text-align: center;
+}
+
+.header-left h6 {
+  font-size: larger;
+  color: #00c4ff;
+  font-family: cursive;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-icon, .menu-icon {
+  font-size: 20px;
+  color: #333;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-info a {
+  color: #00c4ff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.search-input {
+  display: none; /* Hidden by default */
+  border: none;
+  border-bottom: 1px solid #333;
+  outline: none;
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    
+  }
+  .nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: rgb(244,244,244);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    height: 50vh;
+    
+   
+  }
+
+  .nav.nav-open {
+    display: block;
+    padding: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .header-right .contact-info {
+    display: none;
+  }
+
+  .header-right .search-icon,
+  .header-right .menu-icon {
+    display: inline-block;
+  }
+   /* Display search input when searchOpen is true */
+  .search-input {
+    display: inline;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: rgb(244,244,244) ;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    height: 100vh;
+    border: none;
+    border-bottom: 1px solid #333;
+    outline: none;
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+  }
+}
