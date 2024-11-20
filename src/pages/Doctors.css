@@ -1,0 +1,74 @@
+.doctors-container {
+  padding: 20px;
+  text-align: center;
+
+  
+}
+.meetOurDoctor{
+  display: flex;
+  flex-direction: column;
+  
+
+}
+.meetOurDoctor h3 {
+  color: #00aaff;
+  margin-bottom: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.meetOurDoctor h1 {
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.meetOurDoctor p {
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.doctors-list {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.doctor-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.doctor-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.doctor-card h3 {
+  color: #003366;
+  margin-bottom: 5px;
+}
+
+.doctor-card h4 {
+  color: #00aaff;
+  margin-bottom: 15px;
+}
+
+.doctor-card p {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.doctor-card strong {
+  color: #003366;
+}

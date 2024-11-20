@@ -1,9 +1,9 @@
 import React from 'react';
-import './Services.css'; // Import your custom CSS file for styling
+import './Services.css'; 
 
 const servicesData = [
   {
-    image: 'path-to-image1.jpg', // Replace with your image paths
+    image: 'path-to-image1.jpg', 
     title: 'Doctor Availability & Scheduling',
     description: 'Real-time availability of doctors for appointments and splimfied scheduling interface',
   },

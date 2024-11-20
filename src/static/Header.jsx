@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-left">
-        <h6>CAREHUB</h6>
+        <h6>CARE<span>BUDDY</span></h6>
         <p>... health at your fingertips.</p>
       </div>
       

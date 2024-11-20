@@ -34,7 +34,7 @@ const Hero = () => {
             Best Treatment for <span className="highlight">healthy life</span>
           </h1>
           <p>
-          Effortlessly empower seamless healthcare solutions with CareHub’s holistic virtual clinic platform.<br />
+          Effortlessly empower seamless healthcare solutions with CareBuddy’s holistic virtual clinic platform.<br />
           Dynamically streamline access to personalized care pathways and optimize patient engagement  <br />
           for critical health outcomes across all wellness journeys.
           </p>

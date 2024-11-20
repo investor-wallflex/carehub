@@ -6,7 +6,10 @@
   padding: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
-
+.ca{
+  background-color: blue;
+  color: white;
+}
 .header-left {
   text-align: center;
 }
@@ -14,7 +17,7 @@
 .header-left h6 {
   font-size: larger;
   color: #00c4ff;
-  font-family: cursive;
+    font-family: ;
 }
 
 .nav {
